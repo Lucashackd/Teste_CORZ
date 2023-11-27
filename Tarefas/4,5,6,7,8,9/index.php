@@ -112,8 +112,10 @@ session_start();
                 <hr>
             <?php
             }
-            ?>
-    </section>
+        } else {
+            echo '<h2>Nenhum usuário encontrado!</h2>';
+        }
+    ?>    </section>
     <hr>
     <section>
         <legend>Inclusão de clientes</legend>
