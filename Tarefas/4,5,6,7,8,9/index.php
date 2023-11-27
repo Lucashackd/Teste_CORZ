@@ -137,10 +137,5 @@ session_start();
             </div>
         </form>
     </section>
-    <?php
-        } else {
-            echo '<h2>Nenhum usuário encontrado!</h2>';
-        }
-    ?>
 </body>
 </html>
