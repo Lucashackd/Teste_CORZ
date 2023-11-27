@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <div id="inputFull">
+            <label for="preco">Insira o valor do item</label>
+            <input type="text" name="preco" id="preco" pattern="[0-9]+(\.[0-9]+)?"
+                title="Digite um número válido (inteiro ou decimal)" required>
+        </div>
+        <div id="submitfull">
+            <input type="submit" value="Adicionar Item" id="botão">
+            <input type="button" value="Finalizar Compra" id="botão" onclick="emitirNota()">
+        </div>
+        <p>Adicione quantos itens quiser e depois finalize a compra</p>
+    </form>
+
+    <div id="nota">
+        <div id="valorTotal"></div>
+        <div id="valorTotalDesconto"></div>
+        <div id="valorDesconto"></div>
+        <div id="quantidade"></div>
+    </div>
+
+    <script src="nota.js"></script>
+</body>
+
+</html>

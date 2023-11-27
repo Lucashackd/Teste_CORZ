@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+legend {
+    font-family: 'Noto Serif', serif;
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
+    color: #1D2059;
+    margin: 16px 0 16px 0;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.linha {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #2B3A8C;
+    height: 72px;
+    margin: 0 16px 0 16px;
+    align-items: center;
+    border: 2px solid #1D2059;
+    /* border-radius: 15px; */
+}
+
+.info, .infoNF{
+    width: 33%;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    color: #F2F2F2;
+}
+
+.inputField {
+    background-color: #1D2059;
+    border: none;
+    border-bottom: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Noto Serif', serif;
+    color: #F2F2F2;
+    width: 75%;
+    text-align: center;
+}
+
+.inputField:focus {
+    border: 1px solid #4E8BBF;
+    outline: 0;
+}
+
+.botao, #adicionar {
+    background-color: #1D2059;
+    padding: 8px;
+    color: #F2F2F2;
+    border: 2px solid #4E8BBF;
+    border-radius: 5px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 600;
+}
+
+.botao:hover, #adicionar:hover {
+    background-color: #4E8BBF;
+}
+
+#msg_edit, #msg_include, #msg_product, #msg_productDelete, #msg_updateNF, #msg_addNota, h2 {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1D2059;
+    margin: 16px 0 16px 0;
+}
+
+hr {
+    margin: 8px 16px 0 16px;
+    border: 1px solid #A3A5A8;
+}
+
+.formProduto {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: auto;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px;
+}
+
+.formProduto .inputField {
+    width: 250px;
+}
+.formProduto .inputField::placeholder {
+    text-align: left;
+    color: #A3A5A8;
+}
+
+.formProduto .inputField:focus {
+    text-align: left;
+    color: #F2F2F2;
+}
+
+.formProduto .info {
+    width: 25%;
+}
+
+.excluir {
+    background-color: darkred;
+    color:#F2F2F2;
+}
+
+#adicionarProduto {
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.nota {
+    text-align: center;
+    margin: 16px 0;
+}
+
+.formNF .info {
+    width: 20%;
+}
+
+.notaCliente {
+    margin-bottom: 16px;
+}
+
+.notaCliente .info, .notaCliente .cabecalho .info {
+    width: 25%;
+}
+
+.notaCliente .lista {
+    margin-top: 0;
+}
+
+.notaCliente .linha {
+    border-radius: 0%;
+}
+
+.infoNF {
+    width: 50%;
+    color: #1D2059;
+    font-weight: 800;
+}
+
+.linha:has(.infoNF) {
+    background-color: #A3A5A8;
+    border-radius: 0%;
+}
+
+.formNF .linha {
+    border-radius: 0%;
+    height: 60px;
+    border: 1px solid #1D2059;
+}
+
+.formNF .lista {
+    margin: 0;
+}
+
+.cabecalho .linha {
+    background-color: #4E8BBF;
+    border-radius: 0%;
+}
+
+.cabecalho .info {
+    color: #1D2059;
+    font-weight: bold;
+    font-size: 18px;
+    width: 20%;
+}
+
+.excluir2 {
+    background-color: black;
+    color:#F2F2F2;
+    border: 1px solid #F2F2F2;
+}
+
+.excluir2:hover {
+    background-color: #F2F2F2;
+    color: black;
+}
+
+.criarNota {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #A3A5A8;
+    height: 72px;
+    margin: 0 16px 0 16px;
+    align-items: center;
+    border: 2px solid #1D2059;
+    /* border-radius: 15px; */
+}
+
+.criarNota label {
+    color: #1D2059;
+}
+
+#menu {
+	background: #0099CC;
+	background: linear-gradient(to bottom,  #2B3A8C,  #4E8BBF);
+	color: #FFF;
+	height: 45px;
+	padding-left: 18px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #F2F2F2;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #1D2059;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #4E8BBF;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #1D2059;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 2</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: red;
+            margin: 50px 0 0 50px;
+        }
+
+        body {
+            background-color: rgb(31, 30, 30);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Verificar console!</h1>
+    
+    <script>
+        alert("Verificar Console")
+
+        //Inicializa o array com números teste
+        const array = [10, -2, -1, 5, 0]
+
+        //Inicializa a função
+        const classificarNumero = (numeros) => {
+
+            //Verifica o tamanho do array numérico
+            const tamanho = numeros.length
+
+            //Cria novo array para armazenar a saída
+            let resposta = []
+
+            //Itera o array
+            for (let i = 0; i < tamanho; i++) {
+
+                //IF / ELSE -> Classificam cada número no array
+                //"PUSH" -> Adiciona a mensagem de saída no índice do novo array
+                if (numeros[i] > 0) {
+                    resposta.push("O número " + numeros[i] + " é Positivo")
+                } else if (numeros[i] < 0) {
+                    resposta.push("O número " + numeros[i] + " é Negativo")
+                } else {
+                    resposta.push("O número " + numeros[i] + " é Zero")
+                }
+            }
+
+            //Retorna novo array com as mensagens inseridas
+            return resposta
+        }
+
+        //Impressão dos arrays no console
+        console.log(array)
+        console.log(classificarNumero(array))
+    </script>
+</body>
+
+</html>
