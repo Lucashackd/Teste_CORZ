@@ -43,7 +43,7 @@ session_start();
         $resultado = pesquisarNotas($conexao);
         if ($resultado) {
             foreach ($resultado as $nota) {
-                ?>
+        ?>
                 <div class="nota">
                     <form action="formularios.php" method="get" class="formNF">
                         <div class="info" hidden>
@@ -64,7 +64,7 @@ session_start();
                         $campos = pesquisarDadosNotas($conexao);
                         foreach ($campos as $info) {
                             if ($info['id'] == $nota['id']) {
-                                ?>
+                        ?>
                                 <div class="lista">
                                     <div class="linha">
                                         <div class="info" hidden>
@@ -78,7 +78,7 @@ session_start();
                                         <input type="submit" value="EXCLUIR PRODUTO" name="excluirProdutoNota" id="excluirProdutoNota" class="botao excluir">
                                     </div>
                                 </div>
-                            <?php
+                        <?php
                             }
                         }
                         ?>
@@ -98,7 +98,7 @@ session_start();
                                         <?php
                                         $produto = listarProdutos($conexao);
                                         foreach ($produto as $opcao) {
-                                            ?>
+                                        ?>
                                             <option value="<?php echo $opcao['id'] ?>">
                                                 <?php echo $opcao['name'] ?>
                                             </option>
@@ -117,7 +117,7 @@ session_start();
                     </form>
                 </div>
                 <hr>
-            <?php
+        <?php
             }
         }
         ?>
@@ -140,7 +140,7 @@ session_start();
                             <?php
                             $usuario = pesquisarUsuario($conexao);
                             foreach ($usuario as $cliente) {
-                                ?>
+                            ?>
                                 <option value="<?php echo $cliente['id'] ?>">
                                     <?php echo $cliente['name'] ?>
                                 </option>
@@ -155,7 +155,7 @@ session_start();
                             <?php
                             $produto = listarProdutos($conexao);
                             foreach ($produto as $opcao) {
-                                ?>
+                            ?>
                                 <option value="<?php echo $opcao['id'] ?>">
                                     <?php echo $opcao['name'] ?>
                                 </option>

@@ -34,7 +34,7 @@ require_once('funcoes.php');
             if (isset($produto)) {
                 if ($produto) {
                     foreach ($produto as $item) {
-                        ?>
+            ?>
                         <form action='formularios.php' method='get' class="formProduto">
                             <div class="lista">
                                 <div class="linha">
@@ -60,7 +60,7 @@ require_once('funcoes.php');
                     <?php
                     }
                     ?>
-                <?php
+            <?php
                 } else {
                     echo '<h2>Nenhum produto encontrado!</h2>';
                 }

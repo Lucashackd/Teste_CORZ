@@ -54,7 +54,7 @@ session_start();
         $usuario = pesquisarUsuario($conexao);
         if ($usuario) {
             foreach ($usuario as $client) {
-                ?>
+        ?>
                 <form action="formularios.php" method="get">
                     <div class="lista">
                         <div class="linha">
@@ -87,7 +87,7 @@ session_start();
                                 <?php
                                 $produto = listarProdutos($conexao);
                                 foreach ($produto as $opcao) {
-                                    ?>
+                                ?>
                                     <option value="<?php echo $opcao['id'] ?>">
                                         <?php echo $opcao['name'] ?>
                                     </option>
@@ -110,12 +110,13 @@ session_start();
                     </div>
                 </form>
                 <hr>
-            <?php
+        <?php
             }
         } else {
             echo '<h2>Nenhum usuário encontrado!</h2>';
         }
-    ?>    </section>
+        ?>
+    </section>
     <hr>
     <section>
         <legend>Inclusão de clientes</legend>
@@ -138,4 +139,5 @@ session_start();
         </form>
     </section>
 </body>
+
 </html>

@@ -26,7 +26,7 @@ require_once('funcoes.php');
         <legend>Lista de notas</legend>
         <?php
         foreach ($resposta as $nota) {
-            ?>
+        ?>
             <div class="notaCliente">
                 <div class="info" hidden>
                     <label for="idNota">ID da Nota: </label>
@@ -45,7 +45,7 @@ require_once('funcoes.php');
                 $campos = pesquisarDadosNotas($conexao);
                 foreach ($campos as $info) {
                     if ($info['id'] == $nota['id']) {
-                        ?>
+                ?>
                         <div class="notaCliente">
                             <div class="lista">
                                 <div class="linha">
@@ -60,7 +60,7 @@ require_once('funcoes.php');
                                 </div>
                             </div>
                         </div>
-                    <?php
+                <?php
                     }
                 }
                 ?>
